@@ -212,18 +212,22 @@ section {
   max-width: 600px;
   line-height: 1.6;
 }
-.about-us{
-  image-resolution: inherit;
+.aboutme {
+  width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  border-radius: 10px;
+
 }
 .about-m,.about-a{
-
-image-resolution:inherit;
- width: 500px;
- height: 600px;
- justify-content: center;
+  padding: 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+.image1,.image2{
+width: 400px;
+height: 400px;
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+border-radius: 10px;
+gap: 1rem;
 }
 .contact form {
   max-width: 500px;
@@ -266,7 +270,7 @@ image-resolution:inherit;
   padding: 1.5rem 5vw;
   font-size: 0.8rem;
   opacity: 0.7;
-  border-top: 1px solid #222;
+  border-top: 1px solid #403c3c;
 }
 
 /* Responsive tweaks */
