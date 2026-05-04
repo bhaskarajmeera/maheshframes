@@ -216,11 +216,10 @@ section {
   width: 100%;
   display: flex;
   border-radius: 10px;
-
 }
 .about-m,.about-a{
   padding: 1rem;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+
 }
 .image1,.image2{
 width: 400px;
