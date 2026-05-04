@@ -208,12 +208,23 @@ section {
 }
 
 /* About & Contact */
-
 .about p {
   max-width: 600px;
   line-height: 1.6;
 }
+.about-us{
+  image-resolution: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-m,.about-a{
 
+image-resolution:inherit;
+ width: 500px;
+ height: 600px;
+ justify-content: center;
+}
 .contact form {
   max-width: 500px;
 }
@@ -275,105 +286,3 @@ section {
     padding-top: 5rem;
   }
 }
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Photography</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header class="header">
-    <div class="logo">My Photography</div>
-    <nav class="nav">
-      <a href="#hero">Home</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <button id="themeToggle" class="theme-toggle">🌙</button>
-  </header>
-
-  <section id="hero" class="hero">
-    <div class="hero-content">
-      <h1>Capturing Moments, Telling Stories</h1>
-      <p>Landscape • Portrait • Street • Travel</p>
-      <a href="#gallery" class="btn">View Gallery</a>
-    </div>
-  </section>
-
-  <section id="gallery" class="gallery-section">
-    <h2>Gallery</h2>
-    <div class="filters">
-      <button class="filter-btn active" data-filter="all">All</button>
-      <button class="filter-btn" data-filter="landscape">Landscape</button>
-      <button class="filter-btn" data-filter="portrait">Portrait</button>
-      <button class="filter-btn" data-filter="street">Street</button>
-    </div>
-
-    <div class="gallery">
-      <!-- Replace src with your own images -->
-      <div class="gallery-item" data-category="landscape">
-        <img src="images/photo1.jpg" alt="Landscape 1" />
-      </div>
-      <div class="gallery-item" data-category="portrait">
-        <img src="images/photo2.jpg" alt="Portrait 1" />
-      </div>
-      <div class="gallery-item" data-category="street">
-        <img src="images/photo3.jpg" alt="Street 1" />
-      </div>
-      <div class="gallery-item" data-category="landscape">
-        <img src="images/photo4.jpg" alt="Landscape 2" />
-      </div>
-      <div class="gallery-item" data-category="portrait">
-        <img src="images/photo5.jpg" alt="Portrait 2" />
-      </div>
-      <div class="gallery-item" data-category="street">
-        <img src="images/photo6.jpg" alt="Street 2" />
-      </div>
-    </div>
-  </section>
-
-  <!-- Lightbox -->
-  <div id="lightbox" class="lightbox">
-    <span id="lightboxClose" class="lightbox-close">&times;</span>
-    <img id="lightboxImg" class="lightbox-img" src="" alt="Preview" />
-    <p id="lightboxCaption" class="lightbox-caption"></p>
-  </div>
-
-  <section id="about" class="about">
-    <h2>About Me</h2>
-    <p>
-      I’m a photographer who loves natural light, real emotions, and honest stories.
-      This portfolio is a small glimpse into my work.
-    </p>
-  </section>
-
-  <section id="contact" class="contact">
-    <h2>Contact</h2>
-    <form id="contactForm">
-      <div class="form-group">
-        <label>Name</label>
-        <input type="text" id="name" required />
-      </div>
-      <div class="form-group">
-        <label>Email</label>
-        <input type="email" id="email" required />
-      </div>
-      <div class="form-group">
-        <label>Message</label>
-        <textarea id="message" rows="4" required></textarea>
-      </div>
-      <button type="submit" class="btn">Send Message</button>
-      <p id="formStatus" class="form-status"></p>
-    </form>
-  </section>
-
-  <footer class="footer">
-    <p>© <span id="year"></span> My Photography. All rights reserved.</p>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
