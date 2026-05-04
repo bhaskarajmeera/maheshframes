@@ -288,4 +288,8 @@ gap: 1rem;
   .hero {
     padding-top: 5rem;
   }
+  .aboutme{
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
 }
